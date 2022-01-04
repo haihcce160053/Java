@@ -6,6 +6,7 @@ import static java.lang.System.out;
 public class Helloworld {
 
     public static void main(String[] args) {
+        
         String str = "Hello, my name is Hai"; //Chuỗi gốc      
         
         int dem_str = str.length(); //Đếm số lượng ký tự trong chuỗi str
@@ -15,7 +16,12 @@ public class Helloworld {
         int dem_ch = ch.length; //Đếm ký tự trong char[]
              
         String[] split_str = str.split("\\s+"); //Tách chuỗi giữa các khoảng trắng
+
+        for (String string : split_str) {
+            //Duyệt từng phần tử trong mảng String[] split_str
+        }
       
         System.exit(0); //Tắt chương trình
+        
     }
 }
