@@ -21,6 +21,8 @@ public class Helloworld {
             //Duyệt từng phần tử trong mảng String[] split_str
         }
       
+        int a = Integer.parseInt(str); //Chuyển đổi chữ thành số
+        String str_convert = Integer.toString(a); //Chuyển đổi số thành chữ
         System.exit(0); //Tắt chương trình
         
     }
