@@ -23,6 +23,9 @@ public class Helloworld {
       
         int a = Integer.parseInt(str); //Chuyển đổi chữ thành số
         String str_convert = Integer.toString(a); //Chuyển đổi số thành chữ
+        
+        char op = sc.next().charAt(0); //Nhập 1 ký tự vào char
+        
         System.exit(0); //Tắt chương trình
         
     }
