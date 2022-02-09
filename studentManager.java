@@ -58,12 +58,14 @@ public class Student {
                 Scanner sc = new Scanner(System.in);
                 String inputName = sc.nextLine();
                 
+                //Kiểm tra xem có ký tự lạ ngoài chữ cái không, nếu có thì isNum = true
                 boolean isNum = false;
                 for (int i = 0; i < inputName.length(); i++) {
                     if ((int) inputName.charAt(i) >= 0 && (int) inputName.charAt(i) < 32 || (int) inputName.charAt(i) > 32 && (int) inputName.charAt(i) < 65 || (int) inputName.charAt(i) > 90 && (int) inputName.charAt(i) < 97 || (int) inputName.charAt(i) > 122 && (int) inputName.charAt(i) <= 127) {
                         isNum = true;
                     }
                 }
+                //Nếu isNum = false thì ok ko có lỗi
                 if (isNum == false) {
                     if (inputName.length() <= 50) {
                         name.add(inputName);
@@ -71,7 +73,8 @@ public class Student {
                     } else {
                         System.out.println("Your name is too long!");
                     }
-                } else {
+                } //Nếu isNum = true thì đã phát hiện ký tự lạ
+                else {
                     System.out.println("Accept only alphabet, please try again!");
                 }
 
