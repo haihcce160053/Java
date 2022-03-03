@@ -9,7 +9,6 @@
     //Show only end row
     public void displayRowOnlyEnd() {
         System.out.printf("+------+------+--------------------------------+-------------+-------------------+--------------------------------+\n");
-
     }
 
     //Show fish with format
