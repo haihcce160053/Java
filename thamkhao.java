@@ -101,8 +101,7 @@
                 double sellingPrice = this.listOfFish.get(i).getSellingPrice();
                 //Get origin
                 String origin = this.listOfFish.get(i).getOrigin();
-                //Update new price
-                this.listOfFish.set(i, new Fish(ID, familyName, importPrice, sellingPrice, origin));
+               
                 showFish(i + 1, ID, familyName, importPrice, sellingPrice, origin);
             }
         }
